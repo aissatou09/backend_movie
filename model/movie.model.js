@@ -10,10 +10,10 @@ const movieSchema = mongoose.Schema({
         type: Number,
         required: true
     },
-    rating: {
-        type: Number,
+    synopsis: {
+        type: String,
         required: true
-    },
+    }
 })
 const Movie = mongoose.model('Movie', movieSchema);
 export default Movie

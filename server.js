@@ -12,7 +12,7 @@ mongoose.connect("mongodb://localhost:27017/movies", {useNewUrlParser: true, use
 })
 
 app.post("/", (req, res) => {
-    console.log("Welcome to the movies management app");
+    console.log("bienvenue");
 } );
  app.use("/movies", router);
 

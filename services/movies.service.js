@@ -7,8 +7,7 @@ export const createMovie = async (req,res) => {
    const data= await Movie.create({
         title: req.body.title,
         year: req.body.year,
-        synopsis: req.body.synopsis,
-        genre: req.body.genre
+        synopsis: req.body.synopsis
     })
     data.save()
     console.log(data)
@@ -48,7 +47,6 @@ export const updateMovie = async(req,res)=>{
         movie.title = req.body.title
         movie.year = req.body.year
         movie.synopsis = req.body.synopsis
-        movie.genre = req.body.genre
         movie.save()
         res.status(200).send({message: "film modifie"})
     }
